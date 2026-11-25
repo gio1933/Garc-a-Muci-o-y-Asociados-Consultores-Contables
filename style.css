@@ -1,20 +1,20 @@
-
-    /* Configuración de paleta cromática: Azul Petróleo + Oro Cálido + Blanco Marfil */
+/* Configuración de paleta cromática: Azul Petróleo + Dorado Cálido + Blanco Marfil */
     :root {
-      --petrol-dark: #0B2536;
+      --petrol-dark: #0B2538;
       --petrol-mid: #0F344C;
       --petrol-light: #154563;
-      --gold-primary: #D4AF37;
-      --gold-hover: #E5C158;
-      --ivory-text: #F8FAFC;
+      --gold-primary: #C99A2E;
+      --gold-hover: #DFB348;
+      --ivory-text: #FAF8F5;
       --ivory-muted: #CBD5E1;
-      --slate-card: #F8FAFC;
+      --ivory-card: #FAF8F5;
     }
 
     body {
       background-color: var(--petrol-dark);
       color: var(--ivory-text);
       font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
     }
 
     h1, h2, h3, .font-serif-display {
@@ -23,33 +23,33 @@
 
     /* Fondo con textura sutil de retícula financiera en azul petróleo */
     .petrol-grid-bg {
-      background-color: #0B2536;
+      background-color: #0B2538;
       background-image:
-        radial-gradient(circle at 18% 20%, rgba(212, 175, 55, 0.09) 0%, transparent 45%),
+        radial-gradient(circle at 18% 20%, rgba(201, 154, 46, 0.10) 0%, transparent 45%),
         radial-gradient(circle at 85% 75%, rgba(21, 69, 99, 0.55) 0%, transparent 50%),
-        linear-gradient(to right, rgba(248, 250, 252, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(248, 250, 252, 0.03) 1px, transparent 1px);
+        linear-gradient(to right, rgba(250, 248, 245, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(250, 248, 245, 0.03) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
     }
 
     /* Tarjetas translúcidas sobre azul petróleo */
     .glass-petrol-card {
-      background: linear-gradient(145deg, rgba(15, 52, 76, 0.92), rgba(11, 37, 54, 0.96));
-      border: 1px solid rgba(212, 175, 55, 0.28);
+      background: linear-gradient(145deg, rgba(15, 52, 76, 0.92), rgba(11, 37, 56, 0.96));
+      border: 1px solid rgba(201, 154, 46, 0.30);
       box-shadow: 0 20px 35px -15px rgba(3, 12, 20, 0.7);
       transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     .glass-petrol-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(229, 193, 88, 0.65);
-      box-shadow: 0 25px 40px -12px rgba(212, 175, 55, 0.14);
+      border-color: rgba(223, 179, 72, 0.7);
+      box-shadow: 0 25px 40px -12px rgba(201, 154, 46, 0.16);
     }
 
     /* Botón dorado principal */
     .btn-gold {
-      background: linear-gradient(135deg, #D4AF37 0%, #E5C158 50%, #C59B27 100%);
-      color: #0B2536;
+      background: linear-gradient(135deg, #C99A2E 0%, #DFB348 50%, #B88922 100%);
+      color: #0B2538;
       font-weight: 700;
       transition: all 0.25s ease;
     }
@@ -57,7 +57,7 @@
     .btn-gold:hover {
       filter: brightness(1.07);
       transform: translateY(-1px);
-      box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.45);
+      box-shadow: 0 10px 25px -5px rgba(201, 154, 46, 0.45);
     }
 
     /* Animaciones suaves */
@@ -74,9 +74,9 @@
       width: 5px;
     }
     .chat-scroll::-webkit-scrollbar-track {
-      background: #0B2536;
+      background: #0B2538;
     }
     .chat-scroll::-webkit-scrollbar-thumb {
-      background: #D4AF37;
+      background: #C99A2E;
       border-radius: 9999px;
     }
