@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>García Muciño y Asociados | Consultoría Contable Integral</title>
+  <title>García Muciño y Asociados • Consultoría Contable</title>
 
   <!-- Tailwind CSS vía CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,7 +13,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-  
 </head>
 <body class="antialiased selection:bg-[#C99A2E] selection:text-[#0B2538]">
 
@@ -24,9 +23,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-24">
 
-        <!-- LOGOTIPO SVG HERÁLDICO/CONTABLE -->
+        <!-- LOGOTIPO SVG HERÁLDICO / CONTABLE -->
         <a href="#inicio" class="flex items-center gap-3.5 group focus:outline-none">
-          <svg class="w-16 h-16 shrink-0 drop-shadow-md transition-transform duration-300 group-hover:scale-105" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-16 h-16 shrink-0 drop-shadow-md transition-transform duration-300 group-hover:scale-105" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Escudo García Muciño y Asociados">
             <defs>
               <linearGradient id="shieldBlueGrad" x1="35" y1="25" x2="125" y2="135" gradientUnits="userSpaceOnUse">
                 <stop offset="0%" stop-color="#1A4B6E"/>
@@ -63,14 +62,14 @@
               <path d="M123 121 C132 127, 138 121, 132 113 C126 114, 123 118, 123 121 Z"/>
             </g>
 
-            <!-- Escudo Angular Principal -->
+            <!-- Escudo Heráldico Principal -->
             <path d="M80 20 L122 33 V76 C122 104, 102 123, 80 134 C58 123, 38 104, 38 76 V33 L80 20 Z"
                   fill="url(#shieldBlueGrad)" stroke="url(#silverBorderGrad)" stroke-width="3.5"/>
             <path d="M80 26 L116 37 V75 C116 99, 98 116, 80 126 C62 116, 44 99, 44 75 V37 L80 26 Z"
-                  fill="none" stroke="url(#goldAccentGrad)" stroke-width="1.2" stroke-opacity="0.8"/>
+                  fill="none" stroke="url(#goldAccentGrad)" stroke-width="1.2" stroke-opacity="0.85"/>
 
             <!-- Detalle superior de Ábaco Contable -->
-            <g stroke="#94A3B8" stroke-width="1.3" opacity="0.55">
+            <g stroke="#94A3B8" stroke-width="1.3" opacity="0.6">
               <line x1="54" y1="43" x2="106" y2="43"/>
               <line x1="54" y1="50" x2="106" y2="50"/>
               <circle cx="64" cy="43" r="2.2" fill="#C99A2E"/>
@@ -89,43 +88,33 @@
             <text x="80" y="124" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="700" font-size="7.2" fill="#FAF8F5" letter-spacing="1.6">Y ASOCIADOS</text>
           </svg>
 
-          <!-- Texto del Logotipo -->
+          <!-- Texto Institucional -->
           <div class="flex flex-col">
             <span class="font-serif-display text-lg sm:text-xl font-bold tracking-wide text-[#FAF8F5] leading-tight">
-              GARCÍA MUCIÑO
+              GARCÍA MUCIÑO & ASOCIADOS
             </span>
-            <span class="text-[11px] font-semibold tracking-[0.22em] text-[#C99A2E] uppercase mt-0.5">
-              Consultoría Contable
+            <span class="text-[11px] font-semibold tracking-[0.2em] text-[#C99A2E] uppercase mt-0.5">
+              Consultoria Contable
             </span>
           </div>
         </a>
 
         <!-- Menú Desktop -->
-        <nav class="hidden md:flex items-center space-x-8">
+        <nav class="hidden md:flex items-center space-x-5">
           <a href="#inicio" class="text-sm font-medium text-[#CBD5E1] hover:text-[#C99A2E] transition-colors">Inicio</a>
           <a href="#servicios" class="text-sm font-medium text-[#CBD5E1] hover:text-[#C99A2E] transition-colors">Servicios Contables</a>
           <a href="#contacto" class="btn-gold px-5 py-2.5 rounded-lg text-sm shadow-md">
-            Agendar Consulta
+            Solicitar Cotización
           </a>
         </nav>
 
-        <!-- Botón Menú Móvil -->
-        <button
-          onclick="toggleMobileMenu()"
-          class="md:hidden p-3 rounded-lg border border-[#C99A2E]/45 text-[#FAF8F5] hover:bg-[#0F344C] focus:outline-none"
-          aria-label="Abrir menú"
-        >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
       </div>
 
       <!-- Menú Desplegable Móvil -->
       <div id="mobile-menu" class="hidden md:hidden pb-5 pt-2 border-t border-[#C99A2E]/25 space-y-2">
         <a href="#inicio" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-medium text-[#FAF8F5] hover:bg-[#0F344C]">Inicio</a>
-        <a href="#servicios" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-medium text-[#FAF8F5] hover:bg-[#0F344C]">Servicios Contables</a>
-        <a href="#contacto" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-bold btn-gold text-center mt-2">Agendar Consulta</a>
+        <a href="#servicios" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-medium text-[#FAF8F5] hover:bg-[#0F344C]">Consultoría Contable</a>
+        <a href="#contacto" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-base font-bold btn-gold text-center mt-2">Solicitar Cotización</a>
       </div>
     </div>
   </header>
@@ -141,7 +130,7 @@
         <div class="lg:col-span-7 space-y-6 animate-fade-up">
           <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-xs font-semibold tracking-wider uppercase text-[#DFB348]">
             <span class="w-2 h-2 rounded-full bg-[#C99A2E] animate-ping"></span>
-            Firma Especializada en Consultoría Contable Integral
+            Consultoría Contable Integral Corporativa
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#FAF8F5] leading-[1.15]">
@@ -149,26 +138,26 @@
           </h1>
 
           <p class="text-base sm:text-lg text-[#CBD5E1] max-w-2xl leading-relaxed">
-            En <strong class="text-[#FAF8F5]">García Muciño y Asociados</strong> transformamos la gestión administrativa de su organización mediante contabilidad general estructurada, estados financieros oportunos y control presupuestal exacto.
+            En <strong class="text-[#FAF8F5]">García Muciño y Asociados • Consultoría Contable</strong> estructuramos su contabilidad general, estados financieros bajo Normas de Información Financiera (NIF), nóminas y control presupuestal con confidencialidad y rigor profesional.
           </p>
 
           <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
             <a href="#contacto" class="btn-gold px-7 py-3.5 rounded-xl text-center flex items-center justify-center gap-2">
-              <span>Solicitar Diagnóstico Contable</span>
+              <span>Cotizar Servicios Contables</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </a>
             <a href="#servicios" class="px-7 py-3.5 rounded-xl border border-[#C99A2E]/55 bg-[#0F344C]/80 text-[#FAF8F5] font-semibold text-center hover:bg-[#154563] transition-all">
-              Conocer Servicios Contables
+              Ver Especialidades Contables
             </a>
           </div>
 
-          <!-- Métricas Clave -->
+          <!-- Indicadores de Respaldo -->
           <div class="pt-7 border-t border-[#C99A2E]/25 grid grid-cols-3 gap-4 max-w-lg">
             <div>
               <p class="font-serif-display text-2xl sm:text-3xl font-bold text-[#C99A2E]">+15</p>
-              <p class="text-xs text-[#CBD5E1] mt-1">Años de experiencia</p>
+              <p class="text-xs text-[#CBD5E1] mt-1">Años en consultoría contable</p>
             </div>
             <div>
               <p class="font-serif-display text-2xl sm:text-3xl font-bold text-[#C99A2E]">100%</p>
@@ -176,50 +165,50 @@
             </div>
             <div>
               <p class="font-serif-display text-2xl sm:text-3xl font-bold text-[#C99A2E]">99.8%</p>
-              <p class="text-xs text-[#CBD5E1] mt-1">Cierres contables puntuales</p>
+              <p class="text-xs text-[#CBD5E1] mt-1">Cierres contables a tiempo</p>
             </div>
           </div>
         </div>
 
-        <!-- Columna Derecha: Tarjeta Ejecutiva Blanco Marfil de Alto Contraste -->
+        <!-- Columna Derecha: Tarjeta Ejecutiva Blanco Marfil -->
         <div class="lg:col-span-5">
           <div class="bg-[#FAF8F5] text-[#0B2538] rounded-2xl p-7 sm:p-9 shadow-2xl border-2 border-[#C99A2E] relative">
             <div class="flex items-center justify-between mb-5">
               <span class="px-3 py-1 rounded-md bg-[#0B2538] text-[#C99A2E] text-xs font-bold uppercase tracking-wider">
-                Atención Corporativa
+                Consultoría Contable
               </span>
-              <span class="text-xs font-semibold text-slate-600">CDMX y Edo. Méx.</span>
+              <span class="text-xs font-semibold text-slate-600">Atención Ejecutiva</span>
             </div>
 
             <h2 class="text-2xl font-bold text-[#0B2538] mb-3">
-              Gestión Contable y Control Administrativo
+              Control Contable y Reportes Ejecutivos
             </h2>
             <p class="text-sm text-slate-600 leading-relaxed mb-6">
-              Supervisamos cada registro financiero de su empresa para garantizar información clara, oportuna y confiable para la toma de decisiones directivas.
+              Supervisamos y ordenamos su información contable mensual para que dirección, socios y administración tomen decisiones sobre cifras claras.
             </p>
 
             <ul class="space-y-3.5 mb-7">
               <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
                 <span class="w-5 h-5 rounded-full bg-[#0B2538] text-[#C99A2E] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
-                <span>Elaboración mensual de balanzas y estados financieros.</span>
+                <span>Registro ordenado de pólizas, auxiliares y conciliaciones bancarias.</span>
               </li>
               <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
                 <span class="w-5 h-5 rounded-full bg-[#0B2538] text-[#C99A2E] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
-                <span>Conciliaciones bancarias y control presupuestal exacto.</span>
+                <span>Estados financieros mensuales y análisis de flujo de efectivo.</span>
               </li>
               <li class="flex items-start gap-3 text-sm text-slate-800 font-medium">
                 <span class="w-5 h-5 rounded-full bg-[#0B2538] text-[#C99A2E] flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
-                <span>Cálculo integral de nóminas, dispersiones y cuotas sociales.</span>
+                <span>Cálculo puntual de nóminas, finiquitos, IMSS, Infonavit y SUA.</span>
               </li>
             </ul>
 
             <div class="p-4 rounded-xl bg-[#F2EFE9] border border-[#C99A2E]/35 flex items-center justify-between gap-3">
               <div>
-                <p class="text-[11px] font-bold uppercase tracking-wider text-slate-600">Asesoría Directa</p>
+                <p class="text-[11px] font-bold uppercase tracking-wider text-slate-600">Cotización Guiada</p>
                 <p class="text-sm font-bold text-[#0B2538]">Asistente Virtual Disponible 24/7</p>
               </div>
-              <button onclick="toggleChatWidget(true)" class="px-3.5 py-2.5 rounded-lg bg-[#0B2538] text-[#C99A2E] text-xs font-bold hover:bg-[#154563] transition-colors shrink-0">
-                Abrir Chat
+              <button type="button" onclick="toggleChatWidget(true)" class="px-3.5 py-2.5 rounded-lg bg-[#0B2538] text-[#C99A2E] text-xs font-bold hover:bg-[#154563] transition-colors shrink-0">
+                Iniciar Chat
               </button>
             </div>
           </div>
@@ -230,18 +219,18 @@
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 3. SERVICIOS DE CONSULTORÍA CONTABLE                                  -->
+  <!-- 3. SERVICIOS DE CONSULTORÍA CONTABLE INTEGRAL                        -->
   <!-- ===================================================================== -->
   <section id="servicios" class="py-20 sm:py-24 bg-[#0F344C] border-b border-[#C99A2E]/25">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-[0.22em] text-[#C99A2E]">Nuestras Especialidades</span>
+        <span class="text-xs font-bold uppercase tracking-[0.22em] text-[#C99A2E]">Alcance Especializado</span>
         <h2 class="text-3xl sm:text-4xl font-bold text-[#FAF8F5] mt-2 mb-4">
-          Servicios de Consultoría Contable
+          Servicios de Consultoría Contable Integral
         </h2>
         <p class="text-[#CBD5E1] text-base leading-relaxed">
-          Soluciones diseñadas para mantener la salud financiera, la claridad en sus registros y el orden administrativo de personas físicas y empresas.
+          Soluciones contables y administrativas diseñadas para empresas y personas físicas con actividad empresarial.
         </p>
       </div>
 
@@ -257,7 +246,7 @@
             </div>
             <h3 class="text-xl font-bold text-[#FAF8F5] mb-3">Contabilidad General</h3>
             <p class="text-sm text-[#CBD5E1] leading-relaxed mb-5">
-              Registro sistemático de pólizas contables, depuración de cuentas, conciliaciones bancarias mensuales y catálogo contable estructurado.
+              Registro ordenado de pólizas contables, depuración de auxiliares, conciliaciones bancarias mensuales y catálogo contable estructurado.
             </p>
           </div>
           <div class="pt-4 border-t border-[#C99A2E]/25">
@@ -275,11 +264,11 @@
             </div>
             <h3 class="text-xl font-bold text-[#FAF8F5] mb-3">Estados Financieros</h3>
             <p class="text-sm text-[#CBD5E1] leading-relaxed mb-5">
-              Preparación e interpretación de Balance General, Estado de Resultados, flujo de efectivo y reportes ejecutivos para dirección.
+              Elaboración e interpretación de Balance General, Estado de Resultados, flujo de efectivo e indicadores clave para dirección y comités.
             </p>
           </div>
           <div class="pt-4 border-t border-[#C99A2E]/25">
-            <span class="text-xs font-semibold text-[#C99A2E]">Reportes Ejecutivos & Rentabilidad</span>
+            <span class="text-xs font-semibold text-[#C99A2E]">Reportes Ejecutivos & Liquidez</span>
           </div>
         </div>
 
@@ -293,15 +282,15 @@
             </div>
             <h3 class="text-xl font-bold text-[#FAF8F5] mb-3">Nómina y Prestaciones</h3>
             <p class="text-sm text-[#CBD5E1] leading-relaxed mb-5">
-              Cálculo y emisión de recibos de nómina quincenal o semanal, finiquitos, aguinaldos, determinación de cuotas IMSS, Infonavit y SUA.
+              Cálculo y emisión de nómina quincenal o semanal, finiquitos, aguinaldos, primas vacacionales y determinación de cuotas IMSS, Infonavit y SUA.
             </p>
           </div>
           <div class="pt-4 border-t border-[#C99A2E]/25">
-            <span class="text-xs font-semibold text-[#C99A2E]">Administración Laboral & SUA</span>
+            <span class="text-xs font-semibold text-[#C99A2E]">Administración de Nómina & SUA</span>
           </div>
         </div>
 
-        <!-- Tarjeta 4: Control Presupuestal y Costos -->
+        <!-- Tarjeta 4: Control Presupuestal -->
         <div class="glass-petrol-card rounded-2xl p-7 flex flex-col justify-between">
           <div>
             <div class="w-12 h-12 rounded-xl bg-[#0B2538] border border-[#C99A2E]/55 flex items-center justify-center text-[#C99A2E] mb-6">
@@ -311,7 +300,7 @@
             </div>
             <h3 class="text-xl font-bold text-[#FAF8F5] mb-3">Control Presupuestal</h3>
             <p class="text-sm text-[#CBD5E1] leading-relaxed mb-5">
-              Diseño de presupuestos anuales, análisis de costos operativos, control de cuentas por cobrar y pagar, y optimización de tesorería.
+              Estructuración de presupuestos anuales, seguimiento de costos operativos, control de cuentas por cobrar y pagar, y gestión de tesorería.
             </p>
           </div>
           <div class="pt-4 border-t border-[#C99A2E]/25">
@@ -324,7 +313,7 @@
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 4. FORMULARIO DE CONTACTO DIRECTO                                     -->
+  <!-- 5. FORMULARIO DE CONTACTO Y COTIZACIÓN DIRECTA (id="form")            -->
   <!-- ===================================================================== -->
   <section id="contacto" class="petrol-grid-bg py-20 sm:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -332,12 +321,12 @@
 
         <!-- Información Corporativa -->
         <div class="lg:col-span-5 space-y-6">
-          <span class="text-xs font-bold uppercase tracking-[0.22em] text-[#C99A2E]">Contacto Directo</span>
+          <span class="text-xs font-bold uppercase tracking-[0.22em] text-[#C99A2E]">Contacto y Cotizaciones</span>
           <h2 class="text-3xl sm:text-4xl font-bold text-[#FAF8F5]">
-            Agende una sesión con nuestros consultores contables.
+            Solicite su cotización de consultoría contable.
           </h2>
           <p class="text-[#CBD5E1] text-sm sm:text-base leading-relaxed">
-            Permítanos analizar la estructura contable de su empresa y brindarle un acompañamiento profesional a la medida. Respuesta garantizada en menos de 24 horas hábiles.
+            Comparta los datos de su empresa y el servicio contable requerido. Las cotizaciones y consultas se envían directamente a <strong class="text-[#FAF8F5]">CONTACTO@CONTACTO.com</strong>.
           </p>
 
           <div class="space-y-4 pt-3">
@@ -350,7 +339,7 @@
               </div>
               <div>
                 <h4 class="font-bold text-[#FAF8F5] text-sm">Oficinas Centrales</h4>
-                <p class="text-sm text-[#CBD5E1] mt-0.5">Av. Paseo de la Reforma 483, Piso 14, Col. Cuauhtémoc, CDMX.</p>
+                <p class="text-sm text-[#CBD5E1] mt-0.5">XXXX, XXXX, XXXX.</p>
               </div>
             </div>
 
@@ -361,8 +350,8 @@
                 </svg>
               </div>
               <div>
-                <h4 class="font-bold text-[#FAF8F5] text-sm">Correo de Recepción y Cotizaciones</h4>
-                <p class="text-sm text-[#CBD5E1] mt-0.5">gio_1933@hotmail.com</p>
+                <h4 class="font-bold text-[#FAF8F5] text-sm">Correo de Recepción</h4>
+                <p class="text-sm text-[#CBD5E1] mt-0.5">contacto@contacto.com</p>
               </div>
             </div>
 
@@ -374,16 +363,16 @@
               </div>
               <div>
                 <h4 class="font-bold text-[#FAF8F5] text-sm">Línea Ejecutiva</h4>
-                <p class="text-sm text-[#CBD5E1] mt-0.5">+52 (55) 5550-8900 • Lun a Vie 9:00 – 18:00 hrs</p>
+                <p class="text-sm text-[#CBD5E1] mt-0.5">+52 (55) 5555-5555 • Lun a Vie 9:00 – 18:00 hrs</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Formulario en Tarjeta Blanco Marfil -->
+        <!-- Formulario en Tarjeta Blanco Marfil con id="form" -->
         <div class="lg:col-span-7">
           <div class="bg-[#FAF8F5] text-[#0B2538] rounded-3xl p-7 sm:p-10 shadow-2xl border-2 border-[#C99A2E]">
-            <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5" novalidate>
+            <form id="form" class="space-y-5" novalidate>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="nombre" class="block text-xs font-bold uppercase tracking-wider text-[#0B2538] mb-2">
@@ -392,6 +381,7 @@
                   <input
                     type="text"
                     id="nombre"
+                    name="name"
                     required
                     placeholder="Ej. C.P. Alejandro Vargas"
                     class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-[#0B2538] text-sm focus:outline-none focus:border-[#C99A2E] focus:ring-2 focus:ring-[#C99A2E]/30"
@@ -405,6 +395,7 @@
                   <input
                     type="text"
                     id="empresa"
+                    name="company"
                     placeholder="Ej. Comercializadora del Valle S.A."
                     class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-[#0B2538] text-sm focus:outline-none focus:border-[#C99A2E] focus:ring-2 focus:ring-[#C99A2E]/30"
                   />
@@ -419,8 +410,9 @@
                   <input
                     type="tel"
                     id="telefono"
+                    name="phone"
                     required
-                    placeholder="55 1234 5678"
+                    placeholder="Ej. 55 1234 5678"
                     class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-[#0B2538] text-sm focus:outline-none focus:border-[#C99A2E] focus:ring-2 focus:ring-[#C99A2E]/30"
                   />
                 </div>
@@ -432,8 +424,9 @@
                   <input
                     type="email"
                     id="correo"
+                    name="email"
                     required
-                    placeholder="avargas@empresa.com.mx"
+                    placeholder="Ej. avargas@empresa.com.mx"
                     class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-[#0B2538] text-sm focus:outline-none focus:border-[#C99A2E] focus:ring-2 focus:ring-[#C99A2E]/30"
                   />
                 </div>
@@ -444,6 +437,7 @@
                   </label>
                   <select
                     id="servicio"
+                    name="service"
                     class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-[#0B2538] text-sm focus:outline-none focus:border-[#C99A2E] focus:ring-2 focus:ring-[#C99A2E]/30"
                   >
                     <option value="Contabilidad General">Contabilidad General y Pólizas</option>
@@ -460,23 +454,24 @@
                 </label>
                 <textarea
                   id="mensaje"
+                  name="message"
                   rows="4"
                   required
-                  placeholder="Cuéntenos brevemente cómo podemos apoyar a su empresa..."
+                  placeholder="Indique giro de la empresa, volumen mensual de operaciones o detalles de la cotización..."
                   class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-[#0B2538] text-sm focus:outline-none focus:border-[#C99A2E] focus:ring-2 focus:ring-[#C99A2E]/30"
                 ></textarea>
               </div>
 
-              <!-- Mensaje de Retroalimentación (Sin alert()) -->
+              <!-- Contenedor de Retroalimentación Visual en Página (Sin alert()) -->
               <div id="form-feedback" class="hidden p-4 rounded-xl text-sm font-medium"></div>
 
-              <!-- Botones de Acción del Formulario (Correo a gio_1933@hotmail.com y WhatsApp de Prueba) -->
+              <!-- Botones de Envío por Correo (Web3Forms) y WhatsApp Complementario -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                 <button type="submit" class="btn-gold w-full py-3.5 px-5 rounded-xl text-sm shadow-lg flex items-center justify-center gap-2">
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                   </svg>
-                  <span>Enviar Cotización por Correo</span>
+                  <span>Enviar Cotización al Correo</span>
                 </button>
 
                 <button
@@ -487,7 +482,7 @@
                   <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.52 3.48A11.86 11.86 0 0012.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.96L0 24l6.33-1.66a11.86 11.86 0 005.73 1.46h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.45-8.42zM12.07 21.8h-.01a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.85 9.85 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 012.9 7c0 5.46-4.44 9.89-9.89 9.89zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/>
                   </svg>
-                  <span>Enviar por WhatsApp (Prueba)</span>
+                  <span>Enviar por WhatsApp</span>
                 </button>
               </div>
             </form>
@@ -499,17 +494,17 @@
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 5. FOOTER CORPORATIVO                                                 -->
+  <!-- 6. FOOTER CORPORATIVO                                                 -->
   <!-- ===================================================================== -->
   <footer class="bg-[#071926] border-t border-[#C99A2E]/35 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-800">
         <div>
           <span class="font-serif-display text-lg font-bold tracking-wide text-[#FAF8F5]">
-            GARCÍA MUCIÑO Y ASOCIADOS
+            GARCÍA MUCIÑO Y ASOCIADOS • CONSULTORÍA CONTABLE
           </span>
           <p class="text-xs text-[#C99A2E] uppercase tracking-widest mt-1">
-            Consultoría Contable • Estados Financieros • Control Presupuestal
+            Contabilidad General • Estados Financieros • Nóminas • Control Presupuestal
           </p>
         </div>
 
@@ -522,13 +517,13 @@
 
       <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
         <p>© 2026 García Muciño y Asociados • Consultoría Contable. Todos los derechos reservados.</p>
-        <p>Ciudad de México, México.</p>
+        <p>Recepción de cotizaciones: gio_1933@hotmail.com</p>
       </div>
     </div>
   </footer>
 
   <!-- ===================================================================== -->
-  <!-- 6. WIDGET DE CHATBOT INTERACTIVO CON ENVÍO A CORREO Y WHATSAPP        -->
+  <!-- 7. WIDGET DE CHATBOT INTERACTIVO                                      -->
   <!-- ===================================================================== -->
   <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end">
 
@@ -552,13 +547,14 @@
         </div>
         <div class="flex items-center gap-1">
           <button
+            type="button"
             onclick="resetChatFlow()"
             title="Reiniciar conversación"
             class="text-xs px-2.5 py-1.5 rounded-md border border-[#C99A2E]/40 text-[#DFB348] hover:bg-[#0F344C] transition-colors"
           >
             Reiniciar
           </button>
-          <button onclick="toggleChatWidget(false)" class="text-slate-400 hover:text-white p-1.5" aria-label="Cerrar chat">
+          <button type="button" onclick="toggleChatWidget(false)" class="text-slate-400 hover:text-white p-1.5" aria-label="Cerrar chat">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
@@ -571,20 +567,20 @@
 
       <!-- Botones de Respuesta Rápida Iniciales -->
       <div id="chat-quick-replies" class="px-3 py-2 bg-[#071926] border-t border-slate-800 flex flex-wrap gap-1.5">
-        <button onclick="selectChatService('Contabilidad General')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
+        <button type="button" onclick="selectChatService('Contabilidad General')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
           Contabilidad General
         </button>
-        <button onclick="selectChatService('Estados Financieros')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
+        <button type="button" onclick="selectChatService('Estados Financieros')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
           Estados Financieros
         </button>
-        <button onclick="selectChatService('Nómina y Prestaciones')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
+        <button type="button" onclick="selectChatService('Nómina y Prestaciones')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
           Nómina y Prestaciones
         </button>
-        <button onclick="selectChatService('Control Presupuestal')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
+        <button type="button" onclick="selectChatService('Control Presupuestal')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
           Control Presupuestal
         </button>
-        <button onclick="selectChatService('Agendar Asesoría / Cotización')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
-          Agendar Asesoría / Cotización
+        <button type="button" onclick="selectChatService('Cotización Integral Contable')" class="text-[11px] px-2.5 py-1 rounded-full bg-[#0F344C] border border-[#C99A2E]/45 text-[#DFB348] hover:bg-[#C99A2E] hover:text-[#0B2538] transition-colors">
+          Cotización Integral
         </button>
       </div>
 
@@ -603,18 +599,18 @@
         </button>
       </form>
 
-      <!-- Indicador Discreto de Destinos Configurados -->
-      <div id="chat-test-indicator" class="px-3.5 py-1.5 bg-[#05121C] border-t border-[#C99A2E]/25 text-[10px] text-slate-400 flex items-center justify-between gap-2">
-        <span class="inline-flex items-center gap-1.5 font-semibold text-[#DFB348]">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#DFB348]"></span>
-          Correo Activo
+      <!-- Barra de Estado Web3Forms y Destino -->
+      <div class="px-3.5 py-1.5 bg-[#05121C] border-t border-[#C99A2E]/25 text-[10px] text-slate-400 flex items-center justify-between gap-2">
+        <span class="inline-flex items-center gap-1.5 font-semibold text-emerald-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Web3Forms Conectado
         </span>
-        <span id="chat-test-targets" class="truncate text-right"></span>
+        <span class="truncate text-right">gio_1933@hotmail.com</span>
       </div>
     </div>
 
     <!-- Botón Flotante Disparador -->
     <button
+      type="button"
       onclick="toggleChatWidget()"
       class="btn-gold px-4 py-3.5 rounded-full shadow-2xl flex items-center gap-2.5 border-2 border-[#0B2538]"
       aria-label="Abrir asistente virtual"
@@ -627,533 +623,8 @@
   </div>
 
   <!-- ===================================================================== -->
-  <!-- SCRIPTS INTERACTIVOS (CONFIGURACIÓN, CHATBOT Y FORMULARIO)            -->
+  <!-- SCRIPTS INTERACTIVOS (WEB3FORMS FormData, CHATBOT Y WHATSAPP)         -->
   <!-- ===================================================================== -->
-  <script>
-    /**
-     * =========================================================================
-     * CONFIGURACIÓN DE NOTIFICACIONES Y COTIZACIONES
-     * =========================================================================
-     * - correoDestino: Correo receptor de cotizaciones y consultas
-     *   configurado en 'gio_1933@hotmail.com'.
-     * - whatsappPrueba: Número de WhatsApp en formato internacional sin '+'
-     *   ni espacios: [Código de país 52] + [1 para celular en México] + [10 dígitos].
-     * - endpointWebhookCorreo: (Opcional) Si desea envío silencioso en segundo
-     *   plano vía fetch() (ej. Formspree / Web3Forms), coloque la URL aquí;
-     *   si se deja vacío '', se utiliza mailto: hacia correoDestino.
-     */
-    const CONFIG_NOTIFICACIONES = {
-      correoDestino: 'gio_1933@hotmail.com',
-      whatsappPrueba: '5215512345678',
-      endpointWebhookCorreo: ''
-    };
-
-    /**
-     * Estado conversacional del chatbot
-     */
-    const chatState = {
-      step: 'SELECT_SERVICE', // SELECT_SERVICE | ASK_NAME | ASK_PHONE | ASK_EMAIL | ASK_DETAIL | COMPLETED
-      data: {
-        servicio: '',
-        nombre: '',
-        telefono: '',
-        correo: '',
-        detalle: ''
-      }
-    };
-
-    /**
-     * Inicializa el chatbot y muestra los destinos configurados
-     */
-    document.addEventListener('DOMContentLoaded', () => {
-      const targetsEl = document.getElementById('chat-test-targets');
-      if (targetsEl) {
-        targetsEl.textContent = `${CONFIG_NOTIFICACIONES.correoDestino} | +${CONFIG_NOTIFICACIONES.whatsappPrueba}`;
-      }
-      resetChatFlow(true);
-    });
-
-    /**
-     * Alterna el menú móvil en pantallas pequeñas
-     */
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobile-menu');
-      if (menu) menu.classList.toggle('hidden');
-    }
-
-    /**
-     * Abre o cierra la ventana del Chatbot
-     */
-    function toggleChatWidget(forceState) {
-      const win = document.getElementById('chatbot-window');
-      if (!win) return;
-      if (typeof forceState === 'boolean') {
-        win.classList.toggle('hidden', !forceState);
-      } else {
-        win.classList.toggle('hidden');
-      }
-    }
-
-    /**
-     * Reinicia el flujo conversacional del chatbot
-     */
-    function resetChatFlow(isInitial = false) {
-      chatState.step = 'SELECT_SERVICE';
-      chatState.data = {
-        servicio: '',
-        nombre: '',
-        telefono: '',
-        correo: '',
-        detalle: ''
-      };
-
-      const container = document.getElementById('chat-messages');
-      const quickReplies = document.getElementById('chat-quick-replies');
-      const input = document.getElementById('chat-input');
-
-      if (container) container.innerHTML = '';
-      if (quickReplies) quickReplies.classList.remove('hidden');
-      if (input) {
-        input.value = '';
-        input.placeholder = 'Seleccione un servicio o escriba su consulta...';
-      }
-
-      appendChatMessage(
-        'Bienvenido a <strong>García Muciño y Asociados</strong>. Soy su asistente virtual contable.<br/><br/>Seleccione un área de consultoría o escriba su requerimiento para preparar su cotización y canalizarla:',
-        'bot',
-        !isInitial
-      );
-    }
-
-    /**
-     * Inicia el flujo guiado al elegir una opción rápida de servicio
-     */
-    function selectChatService(servicio) {
-      appendChatMessage(servicio, 'user');
-      chatState.data.servicio = servicio;
-      chatState.step = 'ASK_NAME';
-
-      const quickReplies = document.getElementById('chat-quick-replies');
-      const input = document.getElementById('chat-input');
-      if (quickReplies) quickReplies.classList.add('hidden');
-      if (input) input.placeholder = 'Escriba su nombre completo...';
-
-      const introServicio = getServiceIntro(servicio);
-      setTimeout(() => {
-        appendChatMessage(
-          `${introServicio}<br/><br/>Para preparar su cotización y atención personalizada, por favor indíqueme su <strong>nombre completo</strong>:`,
-          'bot'
-        );
-      }, 300);
-    }
-
-    /**
-     * Devuelve una breve introducción profesional según el servicio elegido
-     */
-    function getServiceIntro(servicio) {
-      const s = servicio.toLowerCase();
-      if (s.includes('nómina') || s.includes('nomina')) {
-        return 'Excelente elección. En <strong>Nómina y Prestaciones</strong> gestionamos cálculos periódicos, finiquitos, aguinaldos y determinación ante IMSS, Infonavit y SUA.';
-      }
-      if (s.includes('presupuest')) {
-        return 'Con gusto le apoyamos en <strong>Control Presupuestal</strong>, análisis de costos operativos y optimización de flujo de tesorería.';
-      }
-      if (s.includes('estado')) {
-        return 'En <strong>Estados Financieros</strong> elaboramos Balance General, Estado de Resultados y reportes ejecutivos bajo normas NIF.';
-      }
-      if (s.includes('contabilidad')) {
-        return 'En <strong>Contabilidad General</strong> estructuramos pólizas contables, depuración de cuentas y conciliaciones bancarias mensuales.';
-      }
-      return 'Con gusto agendamos una sesión ejecutiva o preparamos una cotización de consultoría contable a la medida.';
-    }
-
-    /**
-     * Procesa cada mensaje escrito por el usuario en el chatbot
-     */
-    function handleChatSubmit(event) {
-      event.preventDefault();
-      const input = document.getElementById('chat-input');
-      if (!input) return;
-      const text = input.value.trim();
-      if (!text) return;
-
-      appendChatMessage(text, 'user');
-      input.value = '';
-      processChatStep(text);
-    }
-
-    /**
-     * Máquina de estados para validar y capturar los datos del prospecto
-     */
-    async function processChatStep(userInput) {
-      const input = document.getElementById('chat-input');
-
-      if (chatState.step === 'SELECT_SERVICE') {
-        chatState.data.servicio = 'Consulta / Cotización Contable';
-        chatState.data.detalle = userInput;
-        chatState.step = 'ASK_NAME';
-
-        const quickReplies = document.getElementById('chat-quick-replies');
-        if (quickReplies) quickReplies.classList.add('hidden');
-        if (input) input.placeholder = 'Escriba su nombre completo...';
-
-        setTimeout(() => {
-          appendChatMessage(
-            'Gracias por compartirnos su consulta. Para enviar su cotización y solicitud, por favor indíqueme su <strong>nombre completo</strong>:',
-            'bot'
-          );
-        }, 300);
-        return;
-      }
-
-      if (chatState.step === 'ASK_NAME') {
-        if (userInput.length < 3) {
-          setTimeout(() => {
-            appendChatMessage('Por favor ingrese un <strong>nombre completo</strong> válido (al menos 3 caracteres).', 'bot');
-          }, 250);
-          return;
-        }
-        chatState.data.nombre = userInput;
-        chatState.step = 'ASK_PHONE';
-        if (input) input.placeholder = 'Ej. 55 1234 5678';
-
-        setTimeout(() => {
-          appendChatMessage(
-            `Mucho gusto, <strong>${escapeHtml(chatState.data.nombre)}</strong>. ¿Cuál es su número de <strong>teléfono o WhatsApp</strong> (10 dígitos)?`,
-            'bot'
-          );
-        }, 300);
-        return;
-      }
-
-      if (chatState.step === 'ASK_PHONE') {
-        const digits = userInput.replace(/\D/g, '');
-        if (digits.length < 10) {
-          setTimeout(() => {
-            appendChatMessage('Por favor ingrese un número telefónico válido de al menos <strong>10 dígitos</strong>.', 'bot');
-          }, 250);
-          return;
-        }
-        chatState.data.telefono = userInput;
-        chatState.step = 'ASK_EMAIL';
-        if (input) input.placeholder = 'Ej. nombre@empresa.com.mx';
-
-        setTimeout(() => {
-          appendChatMessage('Perfecto. Ahora indíqueme su <strong>correo electrónico</strong> corporativo o personal:', 'bot');
-        }, 300);
-        return;
-      }
-
-      if (chatState.step === 'ASK_EMAIL') {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(userInput)) {
-          setTimeout(() => {
-            appendChatMessage('El formato de correo no parece válido. Por favor ingrese un <strong>correo electrónico</strong> (ej. contacto@empresa.com):', 'bot');
-          }, 250);
-          return;
-        }
-        chatState.data.correo = userInput;
-
-        if (chatState.data.detalle) {
-          chatState.step = 'COMPLETED';
-          if (input) input.placeholder = 'Puede iniciar una nueva consulta con Reiniciar';
-          await finalizeChatCapture();
-          return;
-        }
-
-        chatState.step = 'ASK_DETAIL';
-        if (input) input.placeholder = 'Ej. Empresa comercial, 15 empleados...';
-
-        setTimeout(() => {
-          appendChatMessage(
-            'Por último, cuénteme brevemente el <strong>giro de su empresa o el detalle</strong> de la cotización que necesita:',
-            'bot'
-          );
-        }, 300);
-        return;
-      }
-
-      if (chatState.step === 'ASK_DETAIL') {
-        if (userInput.length < 4) {
-          setTimeout(() => {
-            appendChatMessage('Por favor escriba un breve detalle o giro de su empresa para preparar la cotización adecuada.', 'bot');
-          }, 250);
-          return;
-        }
-        chatState.data.detalle = userInput;
-        chatState.step = 'COMPLETED';
-        if (input) input.placeholder = 'Consulta completada. Pulse Reiniciar para otra.';
-        await finalizeChatCapture();
-        return;
-      }
-
-      if (chatState.step === 'COMPLETED') {
-        setTimeout(() => {
-          appendChatMessage(
-            `Su cotización ya está lista arriba para enviarse a <strong>${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</strong> o por <strong>WhatsApp</strong>. Si desea registrar otra consulta, pulse <strong>Reiniciar</strong>.`,
-            'bot'
-          );
-        }, 250);
-      }
-    }
-
-    /**
-     * Genera enlaces de Mailto hacia gio_1933@hotmail.com y WhatsApp, intenta webhook opcional y muestra tarjeta de acción
-     */
-    async function finalizeChatCapture() {
-      const lead = {
-        origen: 'Chatbot Web - García Muciño y Asociados',
-        correoReceptor: CONFIG_NOTIFICACIONES.correoDestino,
-        ...chatState.data,
-        fecha: new Date().toLocaleString('es-MX')
-      };
-
-      const whatsappUrl = buildWhatsAppUrl(lead);
-      const mailtoUrl = buildMailtoUrl(lead);
-
-      let statusBanner = `Cotización lista para enviar a <strong>${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</strong> o por WhatsApp:`;
-
-      if (CONFIG_NOTIFICACIONES.endpointWebhookCorreo) {
-        try {
-          const response = await fetch(CONFIG_NOTIFICACIONES.endpointWebhookCorreo, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify(lead)
-          });
-          if (response.ok) {
-            statusBanner = `¡Cotización enviada al webhook y lista en correo para <strong>${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</strong>!`;
-          }
-        } catch (err) {
-          statusBanner = `Envío directo preparado hacia <strong>${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</strong> y WhatsApp:`;
-        }
-      }
-
-      const summaryHtml = `
-        <div class="space-y-2.5">
-          <p class="text-[#DFB348] font-bold text-xs uppercase tracking-wider">Resumen de Cotización Capturada</p>
-          <p class="text-xs text-[#CBD5E1]">${statusBanner}</p>
-          <div class="p-2.5 rounded-xl bg-[#071926] border border-[#C99A2E]/35 text-xs space-y-1">
-            <p><strong class="text-[#DFB348]">Destino Correo:</strong> ${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</p>
-            <p><strong class="text-[#DFB348]">Servicio:</strong> ${escapeHtml(lead.servicio)}</p>
-            <p><strong class="text-[#DFB348]">Nombre:</strong> ${escapeHtml(lead.nombre)}</p>
-            <p><strong class="text-[#DFB348]">Teléfono:</strong> ${escapeHtml(lead.telefono)}</p>
-            <p><strong class="text-[#DFB348]">Correo Cliente:</strong> ${escapeHtml(lead.correo)}</p>
-            <p><strong class="text-[#DFB348]">Detalle:</strong> ${escapeHtml(lead.detalle)}</p>
-          </div>
-          <div class="pt-1 flex flex-col gap-2">
-            <a
-              href="${mailtoUrl}"
-              class="btn-gold w-full py-2 px-3 rounded-lg text-xs text-center shadow block"
-            >
-              Enviar Cotización por Correo (${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)})
-            </a>
-            <a
-              href="${whatsappUrl}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-full py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs text-center transition-colors shadow"
-            >
-              Enviar por WhatsApp (Prueba)
-            </a>
-            <button
-              type="button"
-              onclick="resetChatFlow()"
-              class="w-full py-1.5 px-3 rounded-lg border border-slate-600 text-slate-300 hover:text-white hover:border-[#C99A2E] text-[11px] font-medium transition-colors"
-            >
-              Iniciar Nueva Consulta
-            </button>
-          </div>
-        </div>
-      `;
-
-      setTimeout(() => {
-        appendChatMessage(summaryHtml, 'bot');
-      }, 350);
-    }
-
-    /**
-     * Construye la URL wa.me con el mensaje estructurado
-     */
-    function buildWhatsAppUrl(lead) {
-      const lines = [
-        `*Nueva Cotización / Consulta - García Muciño y Asociados*`,
-        `• *Origen:* ${lead.origen}`,
-        `• *Correo Destino:* ${CONFIG_NOTIFICACIONES.correoDestino}`,
-        `• *Servicio:* ${lead.servicio}`,
-        `• *Nombre:* ${lead.nombre}`,
-        `• *Teléfono:* ${lead.telefono}`,
-        `• *Correo Cliente:* ${lead.correo}`,
-        `• *Detalle:* ${lead.detalle}`,
-        `• *Fecha:* ${lead.fecha}`
-      ];
-      const text = encodeURIComponent(lines.join('\n'));
-      return `https://wa.me/${CONFIG_NOTIFICACIONES.whatsappPrueba}?text=${text}`;
-    }
-
-    /**
-     * Construye el enlace mailto: dirigido a gio_1933@hotmail.com con asunto y cuerpo estructurados
-     */
-    function buildMailtoUrl(lead) {
-      const subject = encodeURIComponent(`[Cotización Web] ${lead.servicio} - ${lead.nombre}`);
-      const bodyLines = [
-        `Nueva solicitud de cotización / consulta recibida desde García Muciño y Asociados:`,
-        ``,
-        `Origen: ${lead.origen}`,
-        `Servicio de interés: ${lead.servicio}`,
-        `Nombre completo: ${lead.nombre}`,
-        `Teléfono / WhatsApp: ${lead.telefono}`,
-        `Correo del prospecto: ${lead.correo}`,
-        `Detalle / Empresa: ${lead.detalle}`,
-        `Fecha y hora: ${lead.fecha}`
-      ];
-      const body = encodeURIComponent(bodyLines.join('\n'));
-      return `mailto:${CONFIG_NOTIFICACIONES.correoDestino}?subject=${subject}&body=${body}`;
-    }
-
-    /**
-     * Agrega una burbuja de mensaje al historial del chat
-     */
-    function appendChatMessage(content, sender, animate = true) {
-      const container = document.getElementById('chat-messages');
-      if (!container) return;
-      const bubble = document.createElement('div');
-
-      if (sender === 'user') {
-        bubble.className = 'ml-auto max-w-[82%] bg-[#C99A2E] text-[#0B2538] font-semibold rounded-2xl rounded-tr-none p-3 text-xs sm:text-sm shadow';
-        bubble.textContent = content;
-      } else {
-        bubble.className = `mr-auto max-w-[92%] bg-[#0F344C] border border-[#C99A2E]/40 text-[#FAF8F5] rounded-2xl rounded-tl-none p-3 text-xs sm:text-sm leading-relaxed ${animate ? 'animate-fade-up' : ''}`;
-        bubble.innerHTML = content;
-      }
-
-      container.appendChild(bubble);
-      container.scrollTop = container.scrollHeight;
-    }
-
-    /**
-     * Escapa caracteres HTML para evitar inyección en mensajes dinámicos
-     */
-    function escapeHtml(str) {
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
-    }
-
-    /**
-     * Obtiene y valida los campos del formulario de Contacto Directo
-     */
-    function getValidatedContactFormData() {
-      const nombreEl = document.getElementById('nombre');
-      const empresaEl = document.getElementById('empresa');
-      const telefonoEl = document.getElementById('telefono');
-      const correoEl = document.getElementById('correo');
-      const servicioEl = document.getElementById('servicio');
-      const mensajeEl = document.getElementById('mensaje');
-      const feedback = document.getElementById('form-feedback');
-
-      const nombre = nombreEl ? nombreEl.value.trim() : '';
-      const empresa = empresaEl ? empresaEl.value.trim() : '';
-      const telefono = telefonoEl ? telefonoEl.value.trim() : '';
-      const correo = correoEl ? correoEl.value.trim() : '';
-      const servicio = servicioEl ? servicioEl.value : 'Contabilidad General';
-      const mensaje = mensajeEl ? mensajeEl.value.trim() : '';
-
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      const phoneDigits = telefono.replace(/\D/g, '');
-
-      if (!feedback) return null;
-
-      if (!nombre || phoneDigits.length < 10 || !emailRegex.test(correo) || !mensaje) {
-        feedback.className = 'p-4 rounded-xl text-sm font-semibold bg-red-100 text-red-900 border border-red-300 block animate-fade-up';
-        feedback.textContent = 'Por favor complete su nombre, un teléfono de 10 dígitos, un correo electrónico válido y el detalle de su requerimiento.';
-        return null;
-      }
-
-      return {
-        origen: 'Formulario de Contacto - García Muciño y Asociados',
-        correoReceptor: CONFIG_NOTIFICACIONES.correoDestino,
-        servicio,
-        nombre,
-        telefono,
-        correo,
-        detalle: empresa ? `Empresa: ${empresa} | ${mensaje}` : mensaje,
-        fecha: new Date().toLocaleString('es-MX')
-      };
-    }
-
-    /**
-     * Envía la cotización/solicitud del formulario de contacto hacia gio_1933@hotmail.com
-     */
-    async function handleContactSubmit(event) {
-      event.preventDefault();
-      const lead = getValidatedContactFormData();
-      if (!lead) return;
-
-      const feedback = document.getElementById('form-feedback');
-      const mailtoUrl = buildMailtoUrl(lead);
-      const whatsappUrl = buildWhatsAppUrl(lead);
-
-      if (CONFIG_NOTIFICACIONES.endpointWebhookCorreo) {
-        try {
-          await fetch(CONFIG_NOTIFICACIONES.endpointWebhookCorreo, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify(lead)
-          });
-        } catch (err) {
-          // Continúa con apertura de cliente de correo hacia gio_1933@hotmail.com
-        }
-      }
-
-      if (feedback) {
-        feedback.className = 'p-4 rounded-xl text-sm font-medium bg-[#0B2538] text-[#FAF8F5] border border-[#C99A2E] block animate-fade-up';
-        feedback.innerHTML = `
-          <strong class="text-[#C99A2E]">¡Cotización preparada para envío por Correo!</strong><br/>
-          Estimado(a) <strong>${escapeHtml(lead.nombre)}</strong>, se ha preparado el correo hacia <em>${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</em>.
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="${mailtoUrl}" class="btn-gold px-3.5 py-2 rounded-lg text-xs">Abrir Correo (${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)})</a>
-            <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-500">También Enviar por WhatsApp</a>
-          </div>
-        `;
-      }
-
-      window.location.href = mailtoUrl;
-    }
-
-    /**
-     * Envía la cotización/solicitud del formulario de contacto por WhatsApp de Prueba
-     */
-    function handleContactWhatsApp() {
-      const lead = getValidatedContactFormData();
-      if (!lead) return;
-
-      const feedback = document.getElementById('form-feedback');
-      const whatsappUrl = buildWhatsAppUrl(lead);
-      const mailtoUrl = buildMailtoUrl(lead);
-
-      if (feedback) {
-        feedback.className = 'p-4 rounded-xl text-sm font-medium bg-[#0B2538] text-[#FAF8F5] border border-[#C99A2E] block animate-fade-up';
-        feedback.innerHTML = `
-          <strong class="text-[#C99A2E]">¡Solicitud lista para envío por WhatsApp (Modo Prueba)!</strong><br/>
-          Estimado(a) <strong>${escapeHtml(lead.nombre)}</strong>, abriendo WhatsApp hacia <em>+${escapeHtml(CONFIG_NOTIFICACIONES.whatsappPrueba)}</em> (correo destino: <em>${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</em>).
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-500">Abrir WhatsApp de Prueba</a>
-            <a href="${mailtoUrl}" class="btn-gold px-3.5 py-2 rounded-lg text-xs">También Enviar a ${escapeHtml(CONFIG_NOTIFICACIONES.correoDestino)}</a>
-          </div>
-        `;
-      }
-
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
-    }
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>

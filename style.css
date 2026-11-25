@@ -1,5 +1,4 @@
-/* Configuración de paleta cromática: Azul Petróleo + Dorado Cálido + Blanco Marfil */
-    :root {
+:root {
       --petrol-dark: #0B2538;
       --petrol-mid: #0F344C;
       --petrol-light: #154563;
@@ -21,32 +20,32 @@
       font-family: 'Playfair Display', Georgia, serif;
     }
 
-    /* Fondo con textura sutil de retícula financiera en azul petróleo */
+    /* Fondo con retícula contable/financiera sutil sobre Azul Petróleo */
     .petrol-grid-bg {
       background-color: #0B2538;
       background-image:
-        radial-gradient(circle at 18% 20%, rgba(201, 154, 46, 0.10) 0%, transparent 45%),
+        radial-gradient(circle at 18% 20%, rgba(201, 154, 46, 0.11) 0%, transparent 45%),
         radial-gradient(circle at 85% 75%, rgba(21, 69, 99, 0.55) 0%, transparent 50%),
         linear-gradient(to right, rgba(250, 248, 245, 0.03) 1px, transparent 1px),
         linear-gradient(to bottom, rgba(250, 248, 245, 0.03) 1px, transparent 1px);
       background-size: 100% 100%, 100% 100%, 44px 44px, 44px 44px;
     }
 
-    /* Tarjetas translúcidas sobre azul petróleo */
+    /* Tarjetas corporativas translúcidas con borde dorado sutil */
     .glass-petrol-card {
-      background: linear-gradient(145deg, rgba(15, 52, 76, 0.92), rgba(11, 37, 56, 0.96));
-      border: 1px solid rgba(201, 154, 46, 0.30);
-      box-shadow: 0 20px 35px -15px rgba(3, 12, 20, 0.7);
+      background: linear-gradient(145deg, rgba(15, 52, 76, 0.94), rgba(11, 37, 56, 0.98));
+      border: 1px solid rgba(201, 154, 46, 0.32);
+      box-shadow: 0 20px 35px -15px rgba(3, 12, 20, 0.72);
       transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     .glass-petrol-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(223, 179, 72, 0.7);
-      box-shadow: 0 25px 40px -12px rgba(201, 154, 46, 0.16);
+      border-color: rgba(223, 179, 72, 0.72);
+      box-shadow: 0 25px 40px -12px rgba(201, 154, 46, 0.18);
     }
 
-    /* Botón dorado principal */
+    /* Botón principal en Dorado Cálido */
     .btn-gold {
       background: linear-gradient(135deg, #C99A2E 0%, #DFB348 50%, #B88922 100%);
       color: #0B2538;
@@ -54,28 +53,35 @@
       transition: all 0.25s ease;
     }
 
-    .btn-gold:hover {
+    .btn-gold:hover:not(:disabled) {
       filter: brightness(1.07);
       transform: translateY(-1px);
       box-shadow: 0 10px 25px -5px rgba(201, 154, 46, 0.45);
     }
 
-    /* Animaciones suaves */
+    .btn-gold:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
     @keyframes fadeSlideUp {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     .animate-fade-up {
       animation: fadeSlideUp 0.35s ease forwards;
     }
 
-    /* Scrollbar personalizado para el chat */
+    /* Barra de desplazamiento personalizada para el historial del chatbot */
     .chat-scroll::-webkit-scrollbar {
       width: 5px;
     }
+
     .chat-scroll::-webkit-scrollbar-track {
       background: #0B2538;
     }
+
     .chat-scroll::-webkit-scrollbar-thumb {
       background: #C99A2E;
       border-radius: 9999px;
